@@ -1,0 +1,7 @@
+Asynchronous metode og synchronous metode:
+
+Synchronous metode (tænk på synchronized) sætter en kø op så programmet eksekvere i den valgte rækkefølge, modsat ansynchronous
+
+
+Callback function:
+En callback function er en metode som bliver kaldt når den er klar. Dvs. at andre metoder kan køre samtidig/før indtil at den er færdig eksekveret

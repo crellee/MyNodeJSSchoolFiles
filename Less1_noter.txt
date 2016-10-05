@@ -1,0 +1,21 @@
+touch (laver fil)
+open
+rm -r 
+rm 
+node server.js
+open server.js
+ctrl c (kill)
+mkdir (lav ny mappe)
+pwd (vis sti)
+
+Javascript eksempel:
+var name = "Christian";
+
+console.log(typeof name);
+
+name = 23;
+console.log(typeof name);
+
+console.log(name);
+
+
