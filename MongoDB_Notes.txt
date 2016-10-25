@@ -1,0 +1,32 @@
+NoSQL database:
+Du kan have dubletter overalt i modsætningen til SQL..
+
+mongod	<- starter serveren
+mongo 	<- connecter til serveren
+
+
+RDBMS		MongoDB
+Database	Database
+Table		Collection
+Row		Document
+Index		Index
+JOIN		Embedded Document or 
+		Reference
+
+
+
+db 			viser hvilken db du er i
+show dbs		viser de databaser du har installeret
+use et_navn		laver en ny db og skifter til den
+db.some_name.insert()	laver en ny collection og du kan putte et objekt ind feks:
+db.students.insert({"name":"Chris"})
+db.students.find()	Læser hvad der er i collectionen
+.pretty()		pænere format
+db.students.update({"name":"Chris"},{"name":"Christian"}) opdatere data
+db.students.insert({"name":"Chris", "age": 24})
+db.students.insert({"brand":"BMW","color":false})
+ - du kan putte lige hvad du vil ind i din collection
+db.students.update({"color":false}, {"color":"red"}) <- Hvis du køre denne forsvinder “brand”
+db.students.update({"color":false}, {§set: {”color":"red”}}) <- Her forsvinder brand ikke.
+Set parameteret gør at vi beholder, og hvis vi ikke bruger det bliver alt andet end vi definere slettet.
+db.students.remove({"_id" : ObjectId("580f0dc4a9e60cc6de8c2572")}) <- Sletter et objekt
